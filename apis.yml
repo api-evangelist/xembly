@@ -1,8 +1,25 @@
 aid: xembly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/xembly.png
 name: Xembly
-description: Xembly is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Xembly was a Seattle-based enterprise AI company (2020-2024) whose assistant,
+  Xena, acted as an automated "chief of staff" for knowledge workers - scheduling meetings,
+  taking meeting notes, and tracking action items and tasks over email and Slack. Spun
+  out of Madrona Venture Labs by Pete Christothoulou, Jason Flaks, and Peter Francis,
+  and backed by Lightspeed Venture Partners, Norwest Venture Partners ($15M Series A),
+  and Seven Peaks Ventures, Xembly discontinued its customer-facing services on June
+  1, 2024. It never published a public developer API, and the xembly.com domain has
+  since lapsed to an unrelated operator.
 url: https://raw.githubusercontent.com/api-evangelist/xembly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,34 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-date: '2024-06-01'
+x-status-evidence: https://www.geekwire.com/2024/enterprise-ai-company-xembly-abruptly-ends-service-for-users-says-its-working-on-new-chapter/
+x-domain-note: xembly.com no longer belongs to the company (unrelated sports-betting
+  content as of 2026-07-21); do not link or probe it as Xembly. The github.com/xembly
+  org and xembly.org are unrelated projects sharing the name.
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- Executive Assistant
+- Meetings
+- Scheduling
+- Task Management
+- Productivity
+- Defunct
 apis: []
+common:
+- name: llms.txt
+  type: LLMsTxt
+  url: llms/xembly-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
